@@ -1,0 +1,11 @@
+/* Coloring-layer fix: keep the line art visible while allowing paint strokes to render above it. */
+.canvas-shell { isolation: isolate; background: #fff; }
+#paintCanvas {
+  z-index: 2;
+  mix-blend-mode: multiply;
+  pointer-events: auto;
+}
+#lineCanvas {
+  z-index: 1;
+  pointer-events: none;
+}
