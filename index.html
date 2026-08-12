@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#ffe8f5" />
   <title>Dandy's Coloring Carousel</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="fixes.css" />
 </head>
 <body>
   <main id="app" aria-live="polite">
@@ -34,7 +35,7 @@
       <div class="workspace">
         <aside class="palette-panel" aria-label="Color palette">
           <div id="palette" class="palette"></div>
-          <div class="music-controls"><button id="musicToggle" class="music-toggle" type="button" aria-pressed="false">♪ Music</button><label class="volume-control" for="musicVolume"><span>Vol.</span><input id="musicVolume" type="range" min="0" max="1" step="0.05" value="0.28" aria-label="Music volume"></label></div>
+          <div class="music-controls"><button id="musicToggle" class="music-toggle" type="button" aria-pressed="false">♪ Music</button><label class="volume-control" for="musicVolume"><span>Vol.</span><input id="musicVolume" type="range" min="0" max="1" step="0.05" value="0.22" aria-label="Music volume"></label></div>
           <label class="brush-control">Brush<input id="brushSize" type="range" min="8" max="52" value="28" /></label>
           <button id="eraserBtn" class="tool-chip" type="button">Eraser</button><button id="clearBtn" class="tool-chip" type="button">Clear</button>
         </aside>
@@ -45,5 +46,7 @@
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="app.js"></script>
+  <script src="coloring-fix.js"></script>
+  <script src="music-smooth.js"></script>
 </body>
 </html>
